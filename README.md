@@ -36,3 +36,4 @@ Optionally, you can use your own code (without Qt) to do the windowing and rende
  - meshcolor.h/.cpp
  - ray.h/.cpp
 
+# Geometric-Modeling
