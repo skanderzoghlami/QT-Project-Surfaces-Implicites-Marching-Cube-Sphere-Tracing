@@ -741,6 +741,8 @@ void MeshWidget::mousePressEvent(QMouseEvent* e)
             emit _signalEditSceneRight(ComputeRay(e->pos()));
         emit _signalMouseMoveEdit(e);
     }
+    else if (e->buttons() == Qt::LeftButton)
+        emit _signalErosion(ComputeRay(e->pos()));
 }
 
 /*!

@@ -5,9 +5,9 @@ const double AnalyticScalarField::Epsilon = 1e-6;
 /*!
 \brief Constructor.
 */
-AnalyticScalarField::AnalyticScalarField()
-{
-}
+//AnalyticScalarField::AnalyticScalarField()
+//{
+//}
 
 /*!
 \brief Compute the value of the field.
@@ -15,7 +15,8 @@ AnalyticScalarField::AnalyticScalarField()
 */
 double AnalyticScalarField::Value(const Vector& p) const
 {
-  return Norm(p) - 1.0;
+    Vector p2(p[0] + tx , p[1] + ty , p[2] + tz);
+    return Norm(p2) - 0.7;
 }
 
 /*!
@@ -581,3 +582,4 @@ int AnalyticScalarField::TriangleTable[256][16] = {
   { 0, 9, 5, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 },
   { 0, 4, 8, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 },
   { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 } };
+

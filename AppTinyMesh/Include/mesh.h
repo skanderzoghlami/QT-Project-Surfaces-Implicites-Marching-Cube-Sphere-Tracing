@@ -3,6 +3,7 @@
 #include "box.h"
 #include "ray.h"
 #include "mathematics.h"
+#include "matrix3.h"
 
 // Triangle
 class Triangle
@@ -98,6 +99,13 @@ public:
   Triangle GetTriangle(int) const;
   Vector Vertex(int) const;
   Vector Vertex(int, int) const;
+
+  // Transformations
+  void Translate(const Vector&);
+  void Rotate(const double, const double, const double); //Rotate around x,y,z axis
+  void Rotate(const Vector&, const double);				 //Rotate around an arbitrary axis
+  void Rotate(const Matrix3&);							 //Rotate according to a rotation matrix
+  void Scale(const Matrix3&);
 
   Vector Normal(int) const;
 

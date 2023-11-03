@@ -7,7 +7,6 @@
 
 #include "mesh.h"
 #include "meshcolor.h"
-
 #include <QtCore/QMap>
 
 // Utility class for profiling CPU & GPU
@@ -185,7 +184,7 @@ signals:
   void _signalMouseRelease();
   void _signalEditSceneLeft(const Ray&);
   void _signalEditSceneRight(const Ray&);
-
+  void _signalErosion(const Ray&);
 public slots:
   virtual void mousePressEvent(QMouseEvent*);
   virtual void mouseReleaseEvent(QMouseEvent*);

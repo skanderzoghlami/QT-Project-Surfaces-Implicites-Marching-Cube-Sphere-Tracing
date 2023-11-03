@@ -23,6 +23,8 @@ SOURCES += \
     AppTinyMesh/Source/ray.cpp \
     AppTinyMesh/Source/shader-api.cpp \
     AppTinyMesh/Source/triangle.cpp \
+    matrix3.cpp \
+    treehierarchy.cpp
 
 HEADERS += \
     AppTinyMesh/Include/box.h \
@@ -35,6 +37,8 @@ HEADERS += \
     AppTinyMesh/Include/qte.h \
     AppTinyMesh/Include/realtime.h \
     AppTinyMesh/Include/shader-api.h \
+    matrix3.h \
+    treehierarchy.h
 
 FORMS += \
     AppTinyMesh/UI/interface.ui
