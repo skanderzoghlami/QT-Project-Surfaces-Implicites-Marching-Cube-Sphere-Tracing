@@ -1,3 +1,14 @@
+# Project:
+- This projected is created using the tiny mesh library, it implements Matching cube to create meshes from surface distance fields.
+- In the project I started by implementing primitves (Sphere/Cube/Torus/Capsules..)
+- After that, we implement operations betsween primitives such as differences, union , intersection ,smooth union and smooth intersection.
+- We combine the operations in a tree hierearchy to create more complex shapes such as this sword:
+![Local Image](images/Aspose.Words.22263087-c611-44b4-9209-7d5758c2011e.001.jpeg)
+
+
+
+
+# Installation: 
 ## Windows
 - First, you must install Qt6 (https://www.qt.io/download, use the open source version). Install the msvc2019_64 compiler only (*Note: other compilers can work too*).
 - Set the "QTDIR64" environment variable to your Qt installation folder (example: "E:\Code\Qt\6.3.0\msvc2019_64")
@@ -35,5 +46,3 @@ Optionally, you can use your own code (without Qt) to do the windowing and rende
  - mesh.h/.cpp (*You must remove the Mesh::LoadObj and Mesh::SaveObj functions, which depends on Qt*)
  - meshcolor.h/.cpp
  - ray.h/.cpp
-
-# Geometric-Modeling
