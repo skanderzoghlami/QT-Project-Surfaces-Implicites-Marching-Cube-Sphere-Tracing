@@ -1,5 +1,5 @@
 # Project:
-- This projected is created using the tiny mesh library, it implements Matching cube to create meshes from surface distance fields.
+- This project is created using the tiny mesh library available on QT, it implements Matching cube to create meshes from surface distance fields.
 - In the project I started by implementing primitves (Sphere/Cube/Torus/Capsules..)
 - After that, we implement operations betsween primitives such as differences, union , intersection ,smooth union and smooth intersection.
 - We combine the operations in a tree hierearchy to create more complex shapes such as this sword:
