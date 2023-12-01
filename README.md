@@ -3,6 +3,10 @@
 - In the project I started by implementing primitves (Sphere/Cube/Torus/Capsules..)
 - After that, we implement operations betsween primitives such as differences, union , intersection ,smooth union and smooth intersection.
 - We combine the operations in a tree hierearchy to create more complex shapes such as this sword:
+- Ray tracing is also implemented to send rays and change the meshes, the algorithm used is Sphere tracing.
+- More implementation details are in the report.pdf file.
+
+  
 ![Local Image](images/Aspose.Words.22263087-c611-44b4-9209-7d5758c2011e.001.jpeg)
 
 
